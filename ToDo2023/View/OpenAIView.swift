@@ -15,7 +15,7 @@ struct OpenAIView: View {
     @State private var inputText = ""
     @State private var generateAnswerState: GenerateAnswerState = .none
 
-    private let openAI = OpenAISwift(authToken: "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")
+    private let openAI = OpenAISwift(authToken: "YourAPIKey")
 
     var body: some View {
         VStack {
