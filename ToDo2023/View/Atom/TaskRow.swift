@@ -1,5 +1,5 @@
 //
-//  taskRow.swift
+//  TaskRow.swift
 //  ToDo2023
 //
 //  Created by Takeru Sakakibara on 2022/05/30.
@@ -9,7 +9,7 @@ import SwiftUI
 
 //var task : Task
 
-struct taskRow: View {
+struct TaskRow: View {
     var body: some View {
         GeometryReader { geometry in
 
@@ -29,8 +29,8 @@ struct taskRow: View {
 }
 
 
-struct taskRow_Previews: PreviewProvider {
+struct TaskRow_Previews: PreviewProvider {
     static var previews: some View {
-        taskRow()
+        TaskRow()
     }
 }

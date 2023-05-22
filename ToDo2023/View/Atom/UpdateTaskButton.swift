@@ -9,9 +9,9 @@ import SwiftUI
 import RealmSwift
 
 struct UpdateTaskButton: View {
-    @Binding var beforeValueTask: Task
+    @Binding var beforeValueTask: ToDoTask
     @Environment(\.presentationMode) var presentationMode
-    let afterValueTask: Task
+    let afterValueTask: ToDoTask
     
     //デフォルトRealmの取得
     let realm = try! Realm()

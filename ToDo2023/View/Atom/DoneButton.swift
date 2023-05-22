@@ -11,14 +11,14 @@ struct DoneButton: View {
     var body: some View {
         GeometryReader { geometry in
 
-            RoundedRectangle(cornerRadius: 40)
+            RoundedRectangle(cornerRadius: 20)
                 .fill(Color.green)
                 .opacity(0.8)
                 .overlay(            Text("Done")
                     .font(.system(size: geometry.size.width*0.3, weight: .black, design: .default))
                     .foregroundColor(.white)
                 )
-        }.aspectRatio(2, contentMode: .fit)
+        }.aspectRatio(1.5, contentMode: .fit)
     
     }
 

@@ -1,8 +1,11 @@
 //
 //  RegistTaskButton.swift
-//  Todo2023
+//  ToDo2023
+//
+//  Created by Takeru Sakakibara on 2023/05/08.
 //
 //
+
 import SwiftUI
 import RealmSwift
 
@@ -12,8 +15,8 @@ struct RegistTaskButton: View {
     let realm = try! Realm()
 
     
-    @Binding var todoList: [Task]
-    let task: Task
+    @Binding var todoList: [ToDoTask]
+    let task: ToDoTask
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         
@@ -47,7 +50,7 @@ struct RegistTaskButton_Previews: PreviewProvider {
     }
 }
 
-func transformDB(task:Task) -> DB{
+func transformDB(task:ToDoTask) -> DB{
     
     let idString = task.id.uuidString
     let statusString :String

@@ -40,7 +40,7 @@ struct Todos: View {
     @State private var isShowingSheet = false
     @State var title = "Todo"
     
-    var filteredTaskList: [Task] {
+    var filteredTaskList: [ToDoTask] {
         todoModel.taskList.filter {
             $0.status == selectedTab
         }
@@ -68,8 +68,11 @@ struct Todos: View {
                             }
                         }
                     }
+                    .listRowBackground(Color.gray.opacity(0.1))
                 }
                 .cornerRadius(20)
+                .scrollContentBackground(.hidden)
+                .background(Color.clear)
                 .navigationTitle(title)
                 .navigationBarItems(trailing: Button(action: {
                     isShowingSheet = true
@@ -85,7 +88,7 @@ struct Todos: View {
             
         
         .sheet(isPresented: $isShowingSheet, content: {
-            let task: Task = .init(name: "", description: "", status: selectedTab, kijitsu:"")
+            let task: ToDoTask = .init(name: "", description: "", status: selectedTab, kijitsu:"")
             TaskDetail(task: task)
         })
     }
@@ -93,7 +96,7 @@ struct Todos: View {
 
 struct TodoList_Previews: PreviewProvider {
     static var previews: some View {
-        Todos(selectedTab: TaskStatus.WantToDo)
+        Todos(selectedTab: TaskStatus.ToDo)
             .environmentObject(ToDoModel())
     }
 }

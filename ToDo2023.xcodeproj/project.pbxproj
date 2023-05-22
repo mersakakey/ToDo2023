@@ -18,7 +18,6 @@
 		AABED5EE2A08EC830099873A /* BackMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED5ED2A08EC830099873A /* BackMark.swift */; };
 		AABED5F02A08ECB10099873A /* UpdateTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED5EF2A08ECB10099873A /* UpdateTaskButton.swift */; };
 		AABED5F22A08ECE30099873A /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED5F12A08ECE30099873A /* ToDoModel.swift */; };
-		AABED5F42A08ED540099873A /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED5F32A08ED540099873A /* TaskRow.swift */; };
 		AABED5F72A08EDAE0099873A /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED5F62A08EDAE0099873A /* StatusBar.swift */; };
 		AABED5F92A08EDDD0099873A /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED5F82A08EDDD0099873A /* TaskDetail.swift */; };
 		AABED5FB2A08EE120099873A /* ToDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED5FA2A08EE120099873A /* ToDos.swift */; };
@@ -27,6 +26,11 @@
 		AABED6012A08F0310099873A /* NewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED6002A08F0310099873A /* NewButton.swift */; };
 		AABED6032A08F04C0099873A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED6022A08F04C0099873A /* HomeView.swift */; };
 		AABED6052A08F1AB0099873A /* RealmTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED6042A08F1AB0099873A /* RealmTask.swift */; };
+		AABED6072A12164F0099873A /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED6062A12164F0099873A /* APIModel.swift */; };
+		AABED6092A1216DB0099873A /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED6082A1216DB0099873A /* APIViewModel.swift */; };
+		AABED60C2A1B3D250099873A /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = AABED60B2A1B3D250099873A /* OpenAISwift */; };
+		AABED60E2A1B40220099873A /* OpenAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED60D2A1B40220099873A /* OpenAIView.swift */; };
+		AABED6122A1B53DF0099873A /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABED6112A1B53DF0099873A /* ToDoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +45,6 @@
 		AABED5ED2A08EC830099873A /* BackMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackMark.swift; sourceTree = "<group>"; };
 		AABED5EF2A08ECB10099873A /* UpdateTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskButton.swift; sourceTree = "<group>"; };
 		AABED5F12A08ECE30099873A /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
-		AABED5F32A08ED540099873A /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		AABED5F62A08EDAE0099873A /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		AABED5F82A08EDDD0099873A /* TaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
 		AABED5FA2A08EE120099873A /* ToDos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDos.swift; sourceTree = "<group>"; };
@@ -50,6 +53,10 @@
 		AABED6002A08F0310099873A /* NewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButton.swift; sourceTree = "<group>"; };
 		AABED6022A08F04C0099873A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AABED6042A08F1AB0099873A /* RealmTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTask.swift; sourceTree = "<group>"; };
+		AABED6062A12164F0099873A /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		AABED6082A1216DB0099873A /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
+		AABED60D2A1B40220099873A /* OpenAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIView.swift; sourceTree = "<group>"; };
+		AABED6112A1B53DF0099873A /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AABED5E22A08E7720099873A /* RealmSwift in Frameworks */,
+				AABED60C2A1B3D250099873A /* OpenAISwift in Frameworks */,
 				AABED5E02A08E7720099873A /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +119,7 @@
 				AABED5F82A08EDDD0099873A /* TaskDetail.swift */,
 				AABED5FA2A08EE120099873A /* ToDos.swift */,
 				AABED6022A08F04C0099873A /* HomeView.swift */,
+				AABED60D2A1B40220099873A /* OpenAIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +127,8 @@
 		AABED5E42A08E9E60099873A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AABED6082A1216DB0099873A /* APIViewModel.swift */,
+				AABED6112A1B53DF0099873A /* ToDoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 			children = (
 				AABED5F12A08ECE30099873A /* ToDoModel.swift */,
 				AABED6042A08F1AB0099873A /* RealmTask.swift */,
+				AABED6062A12164F0099873A /* APIModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,7 +151,6 @@
 				AABED5EB2A08EC5B0099873A /* DeleteTaskButton.swift */,
 				AABED5ED2A08EC830099873A /* BackMark.swift */,
 				AABED5EF2A08ECB10099873A /* UpdateTaskButton.swift */,
-				AABED5F32A08ED540099873A /* TaskRow.swift */,
 				AABED5FE2A08F0210099873A /* DoneButton.swift */,
 				AABED6002A08F0310099873A /* NewButton.swift */,
 			);
@@ -174,6 +185,7 @@
 			packageProductDependencies = (
 				AABED5DF2A08E7720099873A /* Realm */,
 				AABED5E12A08E7720099873A /* RealmSwift */,
+				AABED60B2A1B3D250099873A /* OpenAISwift */,
 			);
 			productName = ToDo2023;
 			productReference = AABED5CC2A08E2C30099873A /* ToDo2023.app */;
@@ -205,6 +217,7 @@
 			mainGroup = AABED5C32A08E2C30099873A;
 			packageReferences = (
 				AABED5DE2A08E7720099873A /* XCRemoteSwiftPackageReference "realm-swift" */,
+				AABED60A2A1B3D250099873A /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 			);
 			productRefGroup = AABED5CD2A08E2C30099873A /* Products */;
 			projectDirPath = "";
@@ -232,15 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AABED60E2A1B40220099873A /* OpenAIView.swift in Sources */,
 				AABED5F22A08ECE30099873A /* ToDoModel.swift in Sources */,
 				AABED5EE2A08EC830099873A /* BackMark.swift in Sources */,
 				AABED6012A08F0310099873A /* NewButton.swift in Sources */,
 				AABED5F02A08ECB10099873A /* UpdateTaskButton.swift in Sources */,
+				AABED6072A12164F0099873A /* APIModel.swift in Sources */,
 				AABED5E82A08EBDF0099873A /* StatusButton.swift in Sources */,
 				AABED5F92A08EDDD0099873A /* TaskDetail.swift in Sources */,
 				AABED5F72A08EDAE0099873A /* StatusBar.swift in Sources */,
+				AABED6122A1B53DF0099873A /* ToDoViewModel.swift in Sources */,
+				AABED6092A1216DB0099873A /* APIViewModel.swift in Sources */,
 				AABED5EA2A08EC1E0099873A /* RegistTaskButton.swift in Sources */,
-				AABED5F42A08ED540099873A /* TaskRow.swift in Sources */,
 				AABED5D02A08E2C30099873A /* ToDo2023App.swift in Sources */,
 				AABED5EC2A08EC5B0099873A /* DeleteTaskButton.swift in Sources */,
 				AABED5FF2A08F0210099873A /* DoneButton.swift in Sources */,
@@ -374,6 +390,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo2023/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -410,6 +427,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo2023/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -467,6 +485,14 @@
 				kind = branch;
 			};
 		};
+		AABED60A2A1B3D250099873A /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -479,6 +505,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AABED5DE2A08E7720099873A /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		AABED60B2A1B3D250099873A /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AABED60A2A1B3D250099873A /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

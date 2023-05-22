@@ -9,7 +9,7 @@ import SwiftUI
 import RealmSwift
 
 struct DeleteTaskButton: View {
-    @Binding var beforeValueTask: Task
+    @Binding var beforeValueTask: ToDoTask
     @EnvironmentObject var todoModel: ToDoModel
     @Environment(\.presentationMode) var presentationMode
     

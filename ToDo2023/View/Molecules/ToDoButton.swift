@@ -15,7 +15,7 @@ struct ToDoButton: View {
     var backColor = Color.blue
     var title = "ToDo"
     
-    var filteredTaskList: [Task] {
+    var filteredTaskList: [ToDoTask] {
         todoModel.taskList.filter {
             $0.status == selectedTab
         }
@@ -54,7 +54,7 @@ struct ToDoButton: View {
                 List{
                     
                     
-                    ForEach(filteredTaskList.prefix(4)) { task in
+                    ForEach(filteredTaskList.prefix(3)) { task in
                     
                         HStack {
                             Text(task.name)
@@ -76,12 +76,8 @@ struct ToDoButton: View {
                 }
                 }
                 .aspectRatio(5/3, contentMode: .fit)
-                .onAppear {
-                    UITableView.appearance().backgroundColor = .clear
-                  }
-                .onDisappear {
-                    UITableView.appearance().backgroundColor = .clear
-                  }
+                .scrollContentBackground(.hidden)
+                .background(Color.clear)
                 
                 
                 
@@ -99,17 +95,4 @@ struct ToDoButton_Previews: PreviewProvider {
         ToDoButton(selectedTab: .ToDo).environmentObject(ToDoModel())
 
     }
-}
-
-func leng(tasks:[Task]) ->Int{
-    let t = tasks.count
-    var l = 0
-    
-    if(t>=5){
-        l = 4
-    }else{
-        l = t
-    }
-    
-    return l
 }

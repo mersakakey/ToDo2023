@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TaskDetail: View {
     @EnvironmentObject var todoModel: ToDoModel
-    @State var task: Task
+    @State var task: ToDoTask
     var taskIndex: Int {
         if let taskIndex = todoModel.taskList.firstIndex(where: { $0.id == task.id }) {
             return taskIndex
@@ -19,7 +19,7 @@ struct TaskDetail: View {
     }
     
     var body: some View {
-        VStack {
+        VStack{
             HStack {
                 
                 if taskIndex > todoModel.taskList.count {
@@ -80,14 +80,16 @@ struct TaskDetail: View {
                 .padding(.bottom, 5)
                 .background(Color.white)
             
-            Spacer()
+          //  Spacer()
             
             
         }
         .navigationBarTitleDisplayMode(.inline)
         .background(Color(.white))
         .edgesIgnoringSafeArea(.bottom)
+        .padding(.bottom, 150)
     }
+
 }
 
 struct TaskDetail_Previews: PreviewProvider {
