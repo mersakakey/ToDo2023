@@ -5,12 +5,14 @@
 //  Created by Takeru Sakakibara on 2023/05/08.
 //
 
+//タスクの詳細画面のView
+
 import SwiftUI
 
 struct TaskDetail: View {
     @EnvironmentObject var todoModel: ToDoModel
     @State var task: ToDoTask
-    var taskIndex: Int {
+    var taskIndex: Int { //タスクのインデックス番号を返すやつ（新規なら後ろに追加）
         if let taskIndex = todoModel.taskList.firstIndex(where: { $0.id == task.id }) {
             return taskIndex
         } else {
@@ -22,13 +24,13 @@ struct TaskDetail: View {
         VStack{
             HStack {
                 
-                if taskIndex > todoModel.taskList.count {
+                if taskIndex > todoModel.taskList.count { //新規の場合の画面
                   back()
                     
                     Spacer()
                     
                     RegistTaskButton(todoList: $todoModel.taskList, task: task)
-                } else {
+                } else { //更新の場合の画面
                     Spacer()
                     DeleteTaskButton(beforeValueTask: $todoModel.taskList[taskIndex])
                     UpdateTaskButton(beforeValueTask: $todoModel.taskList[taskIndex], afterValueTask: task)

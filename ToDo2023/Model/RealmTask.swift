@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-
+//タスクをrealmに保存するときに使うモデル
 class DB: Object {
     @objc dynamic var id: String?
     @objc dynamic var name: String?
@@ -19,6 +19,8 @@ class DB: Object {
     override init() {
         super.init()
     }
+    
+    //realmに保存できる形に変形
     
     init(id:String, name: String, DBdescription: String, status: String, kijitsu: String) {
         self.id = id

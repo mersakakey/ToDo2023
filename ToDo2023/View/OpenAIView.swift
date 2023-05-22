@@ -5,6 +5,8 @@
 //  Created by Takeru Sakakibara on 2023/05/22.
 //
 
+//OpenAIのAPIを使うためのView
+
 import SwiftUI
 import OpenAISwift
 

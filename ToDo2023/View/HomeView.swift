@@ -5,6 +5,7 @@
 //  Created by Takeru Sakakibara on 2023/05/08.
 //
 
+//メインのView
 
 import SwiftUI
 import RealmSwift
@@ -21,10 +22,10 @@ struct HomeView: View {
         VStack{
             NavigationView{
                 VStack(){
-//                    Text(viewModel.designPhilosophy)
-//                     .task {
-//                            await viewModel.fetch()
-//                        }
+                    //Text(viewModel.designPhilosophy)
+                    //.task {
+                    //await viewModel.fetch()
+                    //}　githubAPIの非同期処理のテストに使ったやつ(現在は未使用)
                     NavigationLink(destination: Todos(selectedTab: .ToDo)) {
                         ToDoButton(selectedTab:.ToDo)
                     }
@@ -61,10 +62,10 @@ struct HomeView: View {
                         Button(action: {
                             isShowingChatSheet = true
                         }) {
-                                Image(decorative: "openaiicon")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
+                            Image(decorative: "openaiicon")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60)
                             
                         }
                         

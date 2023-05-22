@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-
+// タスクのモデル
 struct ToDoTask: Identifiable {
     var id = UUID()
     var name: String

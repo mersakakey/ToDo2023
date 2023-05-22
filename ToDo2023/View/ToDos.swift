@@ -7,32 +7,7 @@
 
 import SwiftUI
 
-/*
-struct Todos: View {
-    var body: some View {
-        VStack {
-                    GeometryReader { geometry in
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Color.pink)
-                            .overlay(VStack {
-                                Text("todos!")
-                                    .foregroundColor(.white)
-
-                            }.padding())
-                    }
-                    .frame(height: 400)
-                    Spacer()
-                }
-    }
-}
- 
-struct Todos_Previews: PreviewProvider {
-    static var previews: some View {
-        Todos()
-    }
-}
-*/
-
+//ToDoリストのView
 
 struct Todos: View {
     @EnvironmentObject var todoModel: ToDoModel
@@ -47,7 +22,6 @@ struct Todos: View {
     }
     
     var body: some View {
-        //NavigationView {
                 List {
                     ForEach(filteredTaskList) { task in
                         NavigationLink(destination: TaskDetail(task: task)){

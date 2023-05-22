@@ -5,6 +5,8 @@
 //  Created by Takeru Sakakibara on 2023/05/15.
 //
 
+//GithubのAPIのテストに使ったModel（現在は使用してない）
+
 import Foundation
 
 final class APIModel {

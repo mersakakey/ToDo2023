@@ -7,6 +7,8 @@
 
 import Foundation
 
+//GithubのAPIのテストに使ったVM（現在は使用してない）
+
 final class ConcurrencyViewViewModel: ObservableObject {
     @Published private(set) var designPhilosophy = "now loading..."
     private let model = APIModel()
